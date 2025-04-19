@@ -14,7 +14,29 @@ dependencies = [
     "djangorestframework-simplejwt (>=5.5.0,<6.0.0)"
 ]
 
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "filmesapi-django"
+version = "0.1.0"
+description = "Projeto Django com DRF"
+authors = ["Seu Nome <seu@email.com>"]
+readme = "README.md"
+packages = [{ include = "user" }, { include = "comentarios" }, { include = "apiFilmes" }, { include = "addFilmes" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0"
+djangorestframework = "^3.15"
+djangorestframework-simplejwt = "^5.3"
+djangorestframework-authtoken = "^1.1"
+
+[tool.poetry.dev-dependencies]
+# opcional, ex: black, isort, etc
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
