@@ -17,7 +17,7 @@ django = "^5.2"
 djangorestframework = "^3.15"
 django-extensions = "^4.1"
 djangorestframework-simplejwt = "^5.5"
-djangorestframework-authtoken = "^1.1"
+
 
 [tool.poetry.dev-dependencies]
 # Aqui você pode adicionar ferramentas de desenvolvimento (opcional)
