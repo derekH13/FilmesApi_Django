@@ -13,5 +13,5 @@ router.register(r'Filmes', viewsets.CartFilmesViewsets, basename='catalogo')
 urlpatterns = [
     # na rota principal inclui as rotas viewsets
     path('', include(router.urls)),
-
+    path('cartUser/<str:idUser>/', viewsets.get_CartUser, name='cartUser')
 ]
